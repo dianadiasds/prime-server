@@ -12,7 +12,7 @@ Afterwars TravisCI will triger a new deployment in Heroku.
 
 This project is currently deployed and available with the latest master version in: [prime-server](https://prime-server.herokuapp.com)
 
-## Badges
+### Badges
 This project is integrated with Codecov. This tool provides a badge with the test coverage.
 This project is integrated with TravisCI. This tool provides a badge for the building status.
     
