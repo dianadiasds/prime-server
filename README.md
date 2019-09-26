@@ -7,11 +7,14 @@
 The project was developed using Node.
 
 ### Project CI/CD 
-This project is integrated with Heroku. Every push to the `master` branch triggers the Heroku CI/CD and makes a new deploy.
-This project is currently deployed and available in: [prime-server](https://prime-server.herokuapp.com)
+This project is integrated with TravisCI, Codecod and Heroku. Every push to `master` branch triggers the TravisCI running a pipeline that will execute the tests and eslint. If the both succeed, it will trigger the Codecov tool to analyse the test and coverage.
+Afterwars TravisCI will triger a new deployment in Heroku.
+
+This project is currently deployed and available with the latest master version in: [prime-server](https://prime-server.herokuapp.com)
 
 ## Badges
-This project is integrated with Codecov. This tool provides a detailed report of the project test coverage.
+This project is integrated with Codecov. This tool provides a badge with the test coverage.
+This project is integrated with TravisCI. This tool provides a badge for the building status.
     
 ### Frameworks and libraries used
 
