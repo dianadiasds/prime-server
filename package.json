@@ -3,17 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node ./src/index.js",
+    "nodemon": "./node_modules/.bin/nodemon ./src/index.js",
+    "pretest": "./node_modules/.bin/eslint  .",
+    "test": "./node_modules/.bin/jest --config jestconfig.json"
   },
   "author": "Diana Dias",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "jw-paginate": "^1.0.4"
   },
   "devDependencies": {
-    "nodemon": "^1.18.4"
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "jest": "^24.9.0",
+    "nodemon": "^1.18.4",
+    "supertest": "^4.0.2"
   }
 }
