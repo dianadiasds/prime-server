@@ -1,3 +1,9 @@
 language: node_js
 node_js:
   - 10
+
+env:
+  - CODECOV_TOKEN=2818a169-bbd5-4259-afb4-76be306e8bd4
+
+after_success:
+  - codecov
