@@ -14,12 +14,11 @@ const validate = async (req, res, next) => {
     return res.status(400).send('Invalid number informed to calculate prime numbers');
   }
 
-  if (parseInt(number , 0) > MAX_NUMBER_ALLOWED) {
+  if (parseInt(number, 0) > MAX_NUMBER_ALLOWED) {
     return res.status(400).send(`Number informed is greater than the maximum ${MAX_NUMBER_ALLOWED}`);
   }
   return next();
 };
-
 
 router.get('/primenumber', validate, (req, res) => {
   const { number } = req.query;
